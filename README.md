@@ -1,20 +1,23 @@
-Title: HR Insights with MySQL and Power BI
+## Title: HR Insights with MySQL and Power BI
 
-Industry focus: HR
+### Industry focus: HR
 
-Problem statement: Deep dive into company's HR database to answer internal questions about the workforce.
+### Problem statement: Deep dive into company's HR database to answer internal questions about the workforce.
 
-Business use case: 1. Finding managers information
+### Business use case: 
+1. Finding managers information
 2. Creating views as limit data access
 3. Persisting stored procedures in the database to automate queries
 4. and lots more.
 
-Goals/Metrics: Query the organization's database to answer questions from the HR department and create a Power BI dashboard to visualize (i) Overall metrics (Headcount, number of employees per department etc) and (ii)specific details for each employee.
+### Goals/Metrics: 
+Query the organization's database to answer questions from the HR department and create a Power BI dashboard to visualize (i) Overall metrics (Headcount, number of employees per department etc) and (ii)specific details for each employee.
 
-Deliverables: A Power BI dashboard illustrating your findings
+### Deliverables: A Power BI dashboard illustrating your findings
 
 I created the following measures in Power BI by writing DAX:
 
+```
 % Female = DIVIDE([Total Female Employees], [Head Count])
 % Male = DIVIDE([Total Male Employees],[Head Count])
 
@@ -68,3 +71,4 @@ SWITCH(
 )
 RETURN
 Greeting & ", Boss!"
+```
